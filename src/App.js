@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from "react";
 import { render } from "react-dom";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 
 // Components Import.
 import AppRoutes from "./components/AppRoutes";
+import RenderProps from "./components/RenderProps";
 const Compound = lazy(() => import("./components/Compound"));
-const Second = lazy(() => import("./components/Second"));
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <Router>
         <AppRoutes path="/" />
         <Compound path="/compound" />
-        <Second path="/second" />
+        <RenderProps path="/render" />
       </Router>
     </Suspense>
   );
