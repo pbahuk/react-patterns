@@ -1,16 +1,18 @@
 import React, { lazy, Suspense } from "react";
 import { render } from "react-dom";
-import { Router } from "@reach/router";
+import { Router, Link } from "@reach/router";
 
 // Components Import.
-const First = lazy(() => import("./components/First"));
+import AppRoutes from "./components/AppRoutes";
+const Compound = lazy(() => import("./components/Compound"));
 const Second = lazy(() => import("./components/Second"));
 
 const App = () => {
   return (
     <Suspense fallback={<h1> Loading Routes ...</h1>}>
       <Router>
-        <First path="/" />
+        <AppRoutes path="/" />
+        <Compound path="/compound" />
         <Second path="/second" />
       </Router>
     </Suspense>
