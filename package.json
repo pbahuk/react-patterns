@@ -1,0 +1,24 @@
+{
+  "name": "react-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"src/**/*.{js,html} -- write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbahuk/react-patterns.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbahuk/react-patterns/issues"
+  },
+  "homepage": "https://github.com/pbahuk/react-patterns#readme"
+}
